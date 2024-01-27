@@ -20,11 +20,14 @@ const TicketForm = ({ ticket }) => {
     e.preventDefault();
 
     if (EDITMODE) {
-      const res = await fetch(`/api/Tickets/${ticket._id}`, {
-        method: "PUT",
-        body: JSON.stringify({ formData }),
-        "content-type": "application/json",
-      });
+      const res = await fetch(
+        `http://localhost:3000/api/Tickets/${ticket._id}`,
+        {
+          method: "PUT",
+          body: JSON.stringify({ formData }),
+          "content-type": "application/json",
+        }
+      );
       if (!res.ok) {
         throw new Error("Failed to update Ticket.");
       }
