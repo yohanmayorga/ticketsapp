@@ -27,4 +27,4 @@ This open source project is completely free to use, download and customize.
 
 ## Deploy on Vercel
 
-The website is available at this [link.](https://ticketsapp-sigma.vercel.app/)
+The website is available at this [link.](https://ticketsapp-delta.vercel.app/)
